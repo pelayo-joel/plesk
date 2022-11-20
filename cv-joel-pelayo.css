@@ -1,0 +1,377 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap');
+
+html {
+    height: 100%;
+    width: 100%;
+    font-family: 'Comfortaa', cursive;
+    color: aliceblue
+}
+
+body {
+    display: flex;
+    flex-grow: 2;
+    background:  rgba(17,4,53,1);
+    background-image: linear-gradient(to bottom, rgba(17,4,53,1) 7%, rgba(17,4,53,0.2) 90%),url("images-src/testing.gif");
+    background-size: cover;
+    min-height: auto;
+    min-width: auto;
+    margin: 30px;
+}
+
+/* ------------------------------| Side box |------------------------------ */
+
+aside {
+    border: 3px solid #e146f5;
+    border-radius: 20px;
+    width: 20%;
+    min-height: 100%;
+}
+    .about-me {
+        display: flex;
+        flex-direction: column;
+        margin: 20px;
+    }
+        .about-me > * {
+            margin-top: 10px;
+            margin-bottom: 10px;
+            text-decoration: none;
+            color: aliceblue;
+        }
+            .about-me > a {
+                object-fit: contain;
+                margin: auto;
+                width: 80%;
+            }
+            .about-me > div {
+                animation: slide-in-from-left 1s forwards;
+            }
+            .about-me > a > img {
+                animation: scale-in 1s forwards;
+                width: 100%;
+            }
+            #about-me_line {
+                display: block;
+                border-radius: 20px;
+                background-color: aliceblue;
+                height: 5px;
+            }
+            .about-me > div {
+                margin-top: 0px;
+            }
+                .about-me > div > a {
+                    color: aliceblue;
+                    text-decoration: none;
+                    font-size: 14px;
+                    transition: 1s;
+                    
+                }
+                .about-me > div > a:hover {
+                        color: #a3ffcf;
+                        font-size: 15px;
+                        text-shadow: 0 0 10px #e146f5;
+                    }
+         
+/* ------------------------------| Main |------------------------------ */
+
+main {
+    width: 100%;
+    border: 5px solid #e146f5;
+    border-radius: 20px;
+    margin-left: 30px;
+}
+/* ------------------------------| Status tab |------------------------------ */
+
+    .status_txt {
+        grid-area: 1 / 1 / 3 / 5;
+        text-align: justify;
+        padding: 40px;
+        font-size: 17px;
+    }
+        #link {
+            text-decoration: none;
+            color: #a3ffcf;
+        }
+    .status_desc {
+        grid-area: 1 / 5 / 3 / 6;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        text-align: justify;
+        border-left: 2px solid #e146f5;
+        padding-top: 10px;
+        padding-left: 15px;
+        padding-right: 40px;
+        padding-bottom: 0;
+    }
+        .status_desc > * {
+            animation: slide-in-from-right 1s forwards;
+        }
+            #vehicles {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                margin-top: 0;
+                font-size: 20px;
+            }
+                #not-owned {
+                    color: #1a001a;
+                }
+    .status_skills {
+        grid-area: 3 / 1 / 6 / 4;
+        display: block;
+        border-top: 2px solid #e146f5;
+        padding-bottom: 40px;
+    }
+        .skill_category {
+            display: flex;
+            flex-grow: 2;
+            justify-content: space-between;
+            padding-left: 40px;
+            padding-right: 40px;
+        }
+        .skill_category h4 {
+            text-align: left;
+            margin-top: 0.7em;
+            margin-bottom: 0;
+        }
+        .skill_category h3 {
+            text-align: left;
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+            .skill_category > div {
+                min-width: 50%;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+            }
+                .skill_category > div > span {
+                    display: flex;
+                    flex-direction: row;
+                    margin-left: 1em;
+                    width: 100%;
+                }
+                    .skill_category > div > span > img {
+                        object-fit: contain;
+                        width: 5%;
+                    }
+                    .bar {
+                        display: block;
+                        border-radius: 100px;
+                        background: #1D0F46;
+                        height: 5px;
+                        width: 75%;
+                        margin-left: 1em;
+                        margin-top: 0.7em;
+                        margin-bottom: 0.7em;
+                    }
+                    .bar div {
+                        border-radius: inherit;
+                        height: inherit;
+                        background: #a3ffcf;
+                        margin-bottom: inherit;
+                        display: inline-block;
+                    }
+                    #C {animation: c-fill 2s forwards;}
+                    #java {animation: java-fill 2s forwards;}
+                    #Csharp {animation: csharp-fill 2s forwards;}
+                    #python {animation: python-fill 2s forwards;}
+                    #html-css {animation: html_css-fill 2s forwards;}
+                    #linux {animation: linux-fill 2s forwards;}
+                    #windows {animation: windows-fill 2s forwards;}
+                    #virtualisation {animation: virtualisation-fill 2s forwards;}
+                    #office {animation: office-fill 2s forwards;}
+                    #unity {animation: unity-fill 2s forwards;}
+                    #godot {animation: godot-fill 2s forwards;}
+                    #blender {animation: blender-fill 2s forwards;}
+                    #français {animation: france-fill 2s forwards;}
+                    #us {animation: us-fill 2s forwards;}
+                    #philippines {animation: philippines-fill 2s forwards;}
+            .annexe {
+                min-width: 50%;
+                border-left: 1px solid #e146f5;
+            }
+                .annexe > h4 {
+                    padding-left: 1.5em;
+                }
+                .annexe > span {
+                    padding-left: 1.5em;
+                }
+    .status_hobbies {
+        grid-area: 3 / 4 / 6 / 6;
+        border-top: 2px solid #e146f5;
+        border-left: 2px solid #e146f5;
+        padding-right: 40px;
+        padding-left: 40px;
+    }
+        .status_hobbies > div {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            font-size: 60px;
+        }
+        .status_hobbies > h3 {
+            margin-bottom: 20px;
+        }
+
+/* ------------------------------| Other tab |------------------------------ */
+
+    .loading {
+        grid-area: 1 / 1 / 6 / 6;
+        animation: loading 3s infinite;
+        margin: auto;
+    }
+
+/* ------------------------------| Main tab Setup |------------------------------ */
+
+.tabset > input {display:none;}
+.tabset > ul {
+    position:relative;
+    list-style:none;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 10px;
+    padding-left: 0;
+    font-size: 20px;
+}
+.tabset > ul label,
+.tabset > div {
+    border-top	:3px solid #e146f5;
+    transition: 1s;
+}
+.tabset > ul label {
+    display:inline-block;
+    border-top	:3px solid #1a001a;
+    padding:0.25em 1em;
+}
+.tabset > div {
+    position:relative;
+}
+.tabset > input:nth-child(1):hover ~ ul li:nth-child(1) label,
+.tabset > input:nth-child(2):hover ~ ul li:nth-child(2) label,
+.tabset > input:nth-child(3):hover ~ ul li:nth-child(3) label {
+    text-shadow: 0 0 10px #e146f5;
+    scale: 1.1;
+}
+.tabset > input:nth-child(1):checked ~ ul li:nth-child(1) label,
+.tabset > input:nth-child(2):checked ~ ul li:nth-child(2) label,
+.tabset > input:nth-child(3):checked ~ ul li:nth-child(3) label {
+    scale: 1.4;
+    border-top	:3px solid #e146f5;
+    text-shadow: 0 0 20px #e146f5;
+    color: #a3ffcf;
+    border-bottom-color:hsl(220, 100%, 98%);
+}
+.tabset > div > section {
+    display: none;
+}
+.tabset > div > section {
+    padding:1em 1em 0;
+  }
+.tabset > input:nth-child(1):checked ~ div > section:nth-child(1),
+.tabset > input:nth-child(2):checked ~ div > section:nth-child(2),
+.tabset > input:nth-child(3):checked ~ div > section:nth-child(3) {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    padding: 0;
+}
+
+/* ------------------------------| Animation Keyframes |------------------------------ */
+
+@keyframes slide-in-from-left {
+    0% {
+        opacity: 0;
+        transform: translateX(-80px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+@keyframes slide-in-from-right {
+    0% {
+        opacity: 0;
+        transform: translateX(80px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+@keyframes scale-in {
+    0% {
+        opacity: 0;
+        scale: 0;
+    }
+    100% {
+        opacity: 1;
+        scale: 1;
+    }
+}
+@keyframes loading {
+	0%, 100% {opacity: 0;}
+	50% {opacity: 1;}
+}
+
+@keyframes c-fill {
+	0%{width: 0px;}
+	100%{width: 37%;}
+}
+@keyframes java-fill {
+	0%{width: 0px;}
+	100%{width: 60%;}
+}
+@keyframes csharp-fill {
+	0%{width: 0px;}
+	100%{width: 45%;}
+}
+@keyframes python-fill {
+	0%{width: 0px;}
+	100%{width: 55%;}
+}
+@keyframes html_css-fill {
+	0%{width: 0px;}
+	100%{width: 34%;}
+}
+@keyframes linux-fill {
+	0%{width: 0px;}
+	100%{width: 71%;}
+}
+@keyframes windows-fill {
+	0%{width: 0px;}
+	100%{width: 67%;}
+}
+@keyframes virtualisation-fill {
+	0%{width: 0px;}
+	100%{width: 64%;}
+}
+@keyframes office-fill {
+	0%{width: 0px;}
+	100%{width: 77%;}
+}
+@keyframes unity-fill {
+	0%{width: 0px;}
+	100%{width: 27%;}
+}
+@keyframes godot-fill {
+	0%{width: 0px;}
+	100%{width: 32%;}
+}
+@keyframes blender-fill {
+	0%{width: 0px;}
+	100%{width: 23%;}
+}
+@keyframes france-fill {
+	0%{width: 0px;}
+	100%{width: 89%;}
+}
+@keyframes us-fill {
+	0%{width: 0px;}
+	100%{width: 80%;}
+}
+@keyframes philippines-fill {
+	0%{width: 0px;}
+	100%{width: 8%;}
+}
