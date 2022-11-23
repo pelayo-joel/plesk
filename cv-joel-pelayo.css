@@ -13,6 +13,7 @@ body {
     background:  rgba(17,4,53,1);
     background-image: linear-gradient(to bottom, rgba(17,4,53,1) 7%, rgba(17,4,53,0.2) 90%),url("images-src/testing.gif");
     background-size: cover;
+    background-attachment: fixed;
     min-height: auto;
     min-width: auto;
     margin: 30px;
